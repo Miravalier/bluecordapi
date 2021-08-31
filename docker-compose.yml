@@ -6,7 +6,7 @@ services:
         build: .
         restart: always
         ports:
-            - "9093:80"
+            - "${HTTP_PORT}:80"
         environment:
             - "RECAPTCHA_KEY=${RECAPTCHA_KEY}"
             - "ADMIN_EMAIL=${ADMIN_EMAIL}"
