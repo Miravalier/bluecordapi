@@ -1,0 +1,15 @@
+version: "3.0"
+
+services:
+    api:
+        container_name: bluecord_api
+        build: .
+        restart: always
+        ports:
+            - "9093:80"
+        environment:
+            - "RECAPTCHA_KEY=${RECAPTCHA_KEY}"
+            - "ADMIN_EMAIL=${ADMIN_EMAIL}"
+            - "SMTP_USER=${SMTP_USER}"
+            - "SMTP_PASSWORD=${SMTP_PASSWORD}"
+            - "SMTP_SERVER=${SMTP_SERVER}"
