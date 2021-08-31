@@ -14,3 +14,6 @@ nano .env
 docker-compose build
 docker-compose up -d
 ```
+
+# See it in action
+https://www.bluecordcomputing.com/#contact
